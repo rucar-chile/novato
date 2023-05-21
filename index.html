@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Novato</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h2 class="fw-bold text-white-50 my-1">rimar - basico</h2>                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Acerca-de-mi">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Portafolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed bg-secondary bg-opacity-10" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Git - Comandos Repositorio
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse container" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div>Inicializar repositorio local</div>
+                    <div class="comando border-bottom">
+                        <code>git init</code>
+                    </div>                    
+                    <div>Ver estado de archivos</div>
+                    <div class="comando border-bottom">
+                        <code>git status</code>
+                    </div>
+                    <div>Agregar archivos al Stage</div>
+                    <div class="comando border-bottom">
+                        <code>git add archivo</code>
+                    </div>
+                    <div>Agregar modificaciones al repositorio</div>
+                    <div class="comando border-bottom">
+                        <code>git commit -m "comentario"</code>
+                    </div>
+                    <div>Historial de commit</div>
+                    <div class="comando border-bottom">
+                        <code>git log</code>
+                    </div>
+                    <div>Historial de commit abreviado</div>
+                    <div class="comando border-bottom">
+                        <code>git log --oneline</code>
+                    </div>                                        
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed bg-secondary bg-opacity-10" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Git - Comandos Directorio
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse container" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed bg-secondary bg-opacity-10" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Git - Config SSH
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse container" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div>Verificar si existe un SSH</div>
+                    <div class="comando border-bottom">
+                        <code>ls -al ~/.ssh</code>
+                    </div>           
+                    <div>Generar las Keys SSH -- opcion 1</div>
+                    <div class="comando border-bottom">
+                        <code>ssh-keygen -t rsa -b 4096 -C "tu-correo"</code>
+                    </div>
+                    <div>Generar las Keys SSH -- opcion 2</div>
+                    <div class="comando border-bottom">
+                        <code>ssh-keygen -t ed25519 -C "tu-correo"</code>
+                    </div>
+                    <div>Correr agente SSH en Gitbash</div>
+                    <div class="comando border-bottom">
+                        <code>eval "(ssh-agent -s)"</code>
+                    </div>
+                    <div>Agregar key Privada en Gitbash</div>
+                    <div class="comando border-bottom">
+                        <code>ssh-add ~/.ssh/id_rsa</code>
+                    </div>
+                    <div>Copiar contenido key Publica para usar en Github</div>
+                    <div class="comando border-bottom">
+                        <code>clip < ~/.ssh/id_rsa.pub</code>
+                    </div>            
+                </div>                
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingfour">
+                    <button class="accordion-button collapsed bg-secondary bg-opacity-10" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">Git - Config Global
+                    </button>
+                </h2>
+                <div id="flush-collapsefour" class="accordion-collapse collapse container" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+                    <div>Configuracion de Usuario</div>
+                    <div class="comando border-bottom">
+                        <code>git config --global user.name "tu-nombre"</code>
+                    </div>
+                    <div>Configuracion de correo</div>
+                    <div class="comando border-bottom">
+                        <code>git config --global user.email tu-correo</code>
+                    </div>
+                    <div>Configuracion de Editor (vscode)</div>
+                    <div class="comando border-bottom">
+                        <code>git config --global core.editor "code --wait"</code>
+                    </div>
+                    <div>Configuracion de Salto de linea (windows)</div>
+                    <div class="comando border-bottom">
+                        <code>git config --global core.autocrlf true</code>
+                    </div>                    
+                    <div>Mostrar configuracion</div>
+                    <div class="comando border-bottom">
+                        <code>git config --list</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
+</body>
+</html>
