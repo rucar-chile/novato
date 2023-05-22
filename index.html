@@ -12,7 +12,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <h2 class="fw-bold text-white-50 my-1">rimar - basico</h2>                
+                <h2 class="fw-bold text-white-50 my-1">rimar - apoyo basico</h2>                
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
@@ -37,11 +37,11 @@
         <div class="accordion accordion-flush" id="accordionFlushExample">
 
             <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed bg-secondary bg-opacity-10" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Git - Comandos Repositorio
+                    <h2 class="accordion-header" id="flush-heading-20">
+                    <button class="accordion-button collapsed bg-secondary bg-opacity-10" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-20" aria-expanded="false" aria-controls="flush-collapse-20">Git - Comandos Repositorio
                     </button>
                 </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse container" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapse-20" class="accordion-collapse collapse container" aria-labelledby="flush-heading-20" data-bs-parent="#accordionFlushExample">
                     <div>Inicializar repositorio local</div>
                     <div class="comando border-bottom">
                         <code>git init</code>
@@ -70,22 +70,94 @@
             </div>
 
             <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed bg-secondary bg-opacity-10" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Git - Comandos Directorio
+                <h2 class="accordion-header" id="flush-heading-21">
+                    <button class="accordion-button collapsed bg-secondary bg-opacity-10" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-21" aria-expanded="false" aria-controls="flush-collapse-21">Git local <--> Github remoto
                     </button>
                 </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse container" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.
+                <div id="flush-collapse-21" class="accordion-collapse collapse container" aria-labelledby="flush-heading-21" data-bs-parent="#accordionFlushExample">
+                    <div>Copiar Repo-local a --> Repo-remoto</div>
+                    <div class="comando border-bottom">
+                        <code>git remote add origin [url:repositorio-remoto]</code>
+                        <div><code>git branch -M main</code></div>
+                        <div><code>git push -u origin main</code></div>                        
+                    </div>
+                    <div>Actualizar Repo-local a --> Repo-remoto</div>
+                    <div class="comando border-bottom">
+                        <code>git push</code>
+                    </div>
+                    <div>Copiar Repo-remoto a --> Repo-local</div>
+                    <div class="comando border-bottom">
+                        <code>git clone [url:repositorio-remoto]</code>
+                    </div>
+                    <div>Actualizar Repo-remoto a --> Repo-local</div>
+                    <div class="comando border-bottom">
+                        <code>git pull</code>
+                    </div>                    
+                    <div>Mostrar vinculos remotos</div>
+                    <div class="comando border-bottom">
+                        <code>git remote -v</code>
                     </div>
                 </div>
             </div>
 
             <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed bg-secondary bg-opacity-10" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Git - Config SSH
+                <h2 class="accordion-header" id="flush-heading-22">
+                    <button class="accordion-button collapsed bg-secondary bg-opacity-10" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-22" aria-expanded="false" aria-controls="flush-collapse-22">Git - Comandos Directorio
                     </button>
                 </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse container" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapse-22" class="accordion-collapse collapse container" aria-labelledby="flush-heading-22" data-bs-parent="#accordionFlushExample">
+                    <div>Listar archivos</div>
+                    <div class="comando border-bottom">
+                        <code>ls</code>
+                    </div>
+                    <div>Listar archivos incluyendo los Ocultos</div>
+                    <div class="comando border-bottom">
+                        <code>ls -a</code>
+                    </div>
+                    <div>Ver donde estoy</div>
+                    <div class="comando border-bottom">
+                        <code>pwd</code>
+                    </div><div>Cambiar a otro directorio</div>
+                    <div class="comando border-bottom">
+                        <code>cd [namefolder]</code>
+                    </div>
+                    <div>Regresar un directorio atras</div>
+                    <div class="comando border-bottom">
+                        <code>cd ..</code>
+                    </div>
+                    <div>Regresar al directorio raiz</div>
+                    <div class="comando border-bottom">
+                        <code>cd ~</code>
+                    </div>
+                    <div>Crear directorio</div>
+                    <div class="comando border-bottom">
+                        <code>mkdir [namefolder]</code>
+                    </div>
+                    <div>Remover directorio</div>
+                    <div class="comando border-bottom">
+                        <code>rmdir [namefolder]</code>
+                    </div>
+                    <div>Crear archivo</div>
+                    <div class="comando border-bottom">
+                        <code>touch [file.ext]</code>
+                    </div>
+                    <div>Remover archivo</div>
+                    <div class="comando border-bottom">
+                        <code>rm [file.ext]</code>
+                    </div>
+                    <div>Mover o Renombrar</div>
+                    <div class="comando border-bottom">
+                        <code>mv [file_from][file_to]</code>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading-23">
+                    <button class="accordion-button collapsed bg-secondary bg-opacity-10" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-23" aria-expanded="false" aria-controls="flush-collapse-23">Git - Config SSH
+                    </button>
+                </h2>
+                <div id="flush-collapse-23" class="accordion-collapse collapse container" aria-labelledby="flush-heading-23" data-bs-parent="#accordionFlushExample">
                     <div>Verificar si existe un SSH</div>
                     <div class="comando border-bottom">
                         <code>ls -al ~/.ssh</code>
@@ -114,11 +186,11 @@
             </div>
 
             <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingfour">
-                    <button class="accordion-button collapsed bg-secondary bg-opacity-10" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">Git - Config Global
+                <h2 class="accordion-header" id="flush-heading-24">
+                    <button class="accordion-button collapsed bg-secondary bg-opacity-10" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-24" aria-expanded="false" aria-controls="flush-collapse-24">Git - Config Global
                     </button>
                 </h2>
-                <div id="flush-collapsefour" class="accordion-collapse collapse container" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapse-24" class="accordion-collapse collapse container" aria-labelledby="flush-heading-24" data-bs-parent="#accordionFlushExample">
                     <div>Configuracion de Usuario</div>
                     <div class="comando border-bottom">
                         <code>git config --global user.name "tu-nombre"</code>
